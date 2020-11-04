@@ -1,0 +1,38 @@
+@import './variables/sizes.scss';
+@import './mixins.scss';
+@import './variables/colors.scss';
+@import './components/iconized-text.scss';
+@import './variables/fonts.scss';
+
+.navtop {
+    height: 60px;
+    width: 100%;
+    @include flex(row, center, center);
+    background: $lightgrey;
+    font-size: $fz-xs;
+
+    &__content {
+        width: $content-mobile-width;
+        @include flex(row, space-between, center);
+
+        .navtop__text {
+            font-weight: bold;
+
+            .navtop__phone {
+                font-weight: normal;
+            }
+        }
+        .navtop__discount {
+            @include flex(row, space-between, center);
+            width: 50px;
+
+            .navtop__link {
+                @extend .iconized-text;
+
+                .navtop__link-text {
+                    display: none;
+                }
+            }
+        }
+    }
+}

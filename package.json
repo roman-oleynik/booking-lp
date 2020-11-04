@@ -1,9 +1,9 @@
 {
-  "name": "Best Tour Plan web-page",
-  "description": "A website for hotels booking",
+  "name": "tdbc-html-sass-jumpstart",
+  "description": "node-sass jumpstart with stylelint",
   "version": "0.4.0",
   "main": "public/index.html",
-  "author": "roman-oleynik",
+  "author": "5t3ph",
   "scripts": {
     "scss": "sass src/sass:public/css",
     "css": "postcss public/css/*.css -u autoprefixer cssnano -r -m",
